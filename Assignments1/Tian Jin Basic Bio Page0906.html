@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="HTML, CSS, JAVA">
+<meta name="author" content="Tian">
+<meta name="robots" content="noidex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scal=1.0">
+<title>Tian Jin's Home Website</title>
+<!--Referece here-->
+<link rel="stylesheet" href="../../ACCAD/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../ACCAD/css/grid.css">
+<link rel="stylesheet" href="../../ACCAD/css/bootstrap-grid.css">
+<link rel="stylesheet" href="css.html"
+<!--Css part-->
+<style>
+	.background{
+		background-image: url("../images/BG2.jpg");
+		background-size:cover;
+		
+	}
+	h1{color:black;
+		font-size: 30px;
+        font-weight: 800;
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+        background-color:blanchedalmond;
+		height: 300px;
+    }
+	.head{
+		position: absolute;
+		padding-top:20px;
+		padding-left:20px;
+	}
+	.HPic{
+		height: inherit;
+		width:100%;
+		top: 0;
+		position: inherit
+			
+	}
+	.line{
+		height:10px;
+  		border-width:0;
+		border: solid;
+  		background-color:chocolate;
+		margin-top: -5px;
+	}
+	.intro{
+		height:500px;
+		padding-left:20px;
+
+	}
+	.PersonalLmage{
+        width:auto;
+        height:inherit;
+        float: right;
+    }
+	h2{
+		font-size: 80px;
+		text-align: center;
+		font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+
+	}
+	.column{
+            height:300px;
+/*	width is the width of each column	*/
+			width:25% ;
+/*	padding: inside of the object margin:outide of the object	*/
+			padding:50px;
+			background-color:aliceblue;
+			font-weight: 600;
+			border:5px double #E1A5A6  ;
+	}
+    .GameP{
+        width:auto;
+        height:auto;
+        float:right
+    }
+    .Dog{
+        align-content: flex-end;
+        width:auto;
+        height:300px
+    }
+</style>	
+	
+	
+	
+</head>
+
+<body class="background">
+    <script src="../../ACCAD/js/bootstrap.bundle.min.js">       </script>
+    <header>
+        <h1>
+			<p class="head">Hi, I am Tian Jin. Nice to meet you.</p>
+			<img class="HPic" src="../images/tj4.jpg" alt="Me">
+		
+		</h1>
+	    </header>	
+	<hr class="line">
+
+<!--Personal Information-->
+   <div class="intro">
+	   		<!--Personal Picture-->
+		<img class="PersonalLmage" src="../images/tj1.jpg" alt="Me">   
+
+        <h2>Who am I???</h2> 
+        <ul class="order">
+           <a href="#game"><li id="game1" class="WAI">Game Person</li></a> 
+           <a href="#Dog"> <li class="WAI">Dog Person</li></a> 
+            <a href="#ISTJ"> <li class="WAI">ISTJ</li></a> 
+           <a href="#RA"> <li class="WAI">Research Assistant</li></a> 
+	    </ul>
+		<p>
+        &emsp;I am a senior in the Ohio State University. Major in Communication and minor in Studio Art and Game studies.
+        </p>
+        <p>
+        &emsp;I like researching user experience, human-computer interaction kind of stuff, and connecting what I have learned with new-media technologies. 
+        </p>
+	   <a href="https://www.bing.com/search?q=Tian+Jin&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=tian+jin&sc=10-8&sk=&cvid=52B9DD5130F34561BD16BD5AE3E83010&ghsh=0&ghacc=0&ghpl=">
+           <button type="button" class="btn btn-success px-5" >Google me for more information!:)</button>
+       </a>
+	 </div>
+<!--Second Part-->
+        
+        
+        <div>
+           <div>
+            <h3 id="game">Game Person</h3>
+            <p>
+            &emsp;I like kinds of video games. Here are some my favourite video games.
+            </p>
+                <div class="column">CyberPunk2077
+                        <img class="GameP" src="../images/CP.jpg" alt="CP">
+                    </div>
+                <div class="column">Ashs of the Kingdom
+                         <img class="GameP" src="../images/DHY.jpg" alt="DHY">
+                    </div>	
+                <div class="column">The Long Dark
+                         <img class="GameP" src="../images/TLD.jpg" alt="TLD">
+                    </div>
+                <div class="column">Depersonalization
+                         <img class="GameP" src="../images/DP.jpg" alt="DP">
+                    </div>
+                <div class="column">Zelda: breath of the wild
+                         <img class="GameP" src="../images/ZD.jpg" alt="ZD">
+                    </div>
+
+            </div>
+        <div>
+            <h3 id="Dog">Dog Person</h3>
+            <p>
+            &emsp;Absolutely a dog person! Here is my puppy back in China!
+                <img class="Dog" src="../images/Puppy.jpg" alt="Puppy">
+                
+            </p>
+        </div>
+            
+
+        <h3 id="ISTJ">ISTJ Person</h3>
+            <p>
+            &emsp;Usually I am more like to stay at home alone, doing my own stuff.
+        
+        
+            </p>
+        <h3 id="RA">Research Assistant</h3>
+            <p>
+            &emsp;Currently, I am working as a research assistant in Communication department. I will help my professor taking surveys and experiments with participants. 
+            </p>
+        </div>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+	
+</body>
+</html>

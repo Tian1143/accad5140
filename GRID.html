@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="HTML, CSS, JAVA">
+<meta name="author" content="Tian">
+<meta name="robots" content="noidex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scal=1.0">
+<title>Grid</title>
+<!--Referece here-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/grid.css">	
+<script src="js/bootstrap.bundle.min.js"></script>
+	<style>
+		.spacediv{
+			height: 40px;
+/*
+			padding: 20px;
+			clear: both;
+*/		
+		}
+		.container{
+/*will rewrite things*/
+		}
+		.mainImage{
+			width:inherit;
+		}
+		.mainTitle{
+			position: absolute;
+			top: 28%;
+			left: 29%;
+			font-size: 2.2vw;
+			color:white;
+/*			opacity: 0.5;*/
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+		h4 {
+			font-weight: bold;
+			padding-top: 5px;
+		}
+		.authorPhoto{
+			width: 40px;
+			height: 40px;
+			background-color:darkgray;
+			float: left;
+			margin-right: 20px;
+			border-radius: 50%;
+		}
+		.asideImage{
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+		.imgcard{
+			width: 50%;
+		}
+		
+		a:link{text-decoration: none;}
+		a:visited{text-decoration: none;}
+		a:hover{text-decoration: none;}
+		a:active{text-decoration: none;}
+
+		
+	</style>
+	
+</head>
+
+<body>
+	<div class="spacediv">&nbsp;</div>	
+
+<!-- Static Grid -->
+	<div class="container">
+		<!-- Global naviation -->
+		<div class="row"><!-- below need to equal to 12 -->
+		<div class="col-6 themed-grid-col"><img src="images/logo.png" alt="logo"></div>
+		<div class="col-2 themed-grid-col">HOME</div>
+		<div class="col-2 themed-grid-col">DISCOVERY</div>
+		<div class="col-1 themed-grid-col">PHOTOS</div>
+		<div class="col-1 themed-grid-col">CONTACT</div>	
+		</div>
+		
+		<!-- Main Image	-->
+		<div class="row"><!-- below need to equal to 12 -->
+			<div class="col themed-grid-col" >
+				<img class="mainImage" src="images/heroNew.jpg" alt="hero">
+							<span class="mainTitle"> AMAZING PLACES IN AMERICA TO VISIT</span>
+			</div>
+		</div>
+		<!-- Main Content	-->
+		<div class="row"><!-- below need to equal to 12 -->
+			<div class="col-6 themed-grid-col">
+				<h4>Learn about the history of travel</h4>
+				<p>Travel dates back to antiquity where wealthy Greeks and Romans would travel for leisure to their
+summer homes and villas in cities such as Pompeii and Baiae. While early travel tended to be
+slower, more dangerous, and more dominated by trade and migration, cultural and technological
+advances over many years have tended to mean that travel has become easier and more
+accessible. Mankind has come a long way in transportation since Christopher Columbus sailed to
+the new world from Spain in 1492, an expedition which took over 10 weeks to arrive at the final
+destination; to the 21st century where aircraft allow travel from Spain to the United States overnight.</p>
+				<p>Travel in the Middle Ages offered hardships and challenges, however, it was important to the
+economy and to society. The wholesale sector depended (for example) on merchants dealing with/
+through caravans or sea-voyagers, end-user retailing often demanded the services of many itinerant
+peddlers wandering from village to hamlet, gyrovagues (Wandering Monks) and wandering friars
+brought theology and pastoral support to neglected areas, traveling minstrels practiced the never-
+ending tour, and armies ranged far and wide in various crusades and in sundry other wars.[9]
+Pilgrimages were common in both the European and Islamic world and involved streams of travelers
+both locally (Canterbury Tales-style) and internationally.</p>
+				<p>In the late 16th century it became fashionable for young European aristocrats and wealthy upper-
+class men to travel to significant European cities as part of their education in the arts and literature
+		</p>
+		<button type="button" class="btn btn-success">Learn More</button>
+			</div>
+<!--			<div class="col-2">&nbsp;</div>	-->
+			<div class="col-6 themed-grid-col">
+				<div class="authorPhoto">&nbsp;</div>
+				<h4>Johnathan Walker</h4>
+				<p><br>Did you know, Iceland is the world's 18th-largest island, and Europe's second-largest island after Great Britain. (The island of Ireland is third.) The main island covers 101,826 km2 (39,315 sq mi), but the entire country is 103,000 km2 (40,000 sq mi) in size, of which 62.7% is tundra.
+				</p>
+				<div class="authorPhoto">&nbsp;</div>
+				<h4>Johnathan Walker</h4>
+				<p><br>Did you know, Iceland is the world's 18th-largest island, and Europe's second-largest island after Great Britain. (The island of Ireland is third.) The main island covers 101,826 km2 (39,315 sq mi), but the entire country is 103,000 km2 (40,000 sq mi) in size, of which 62.7% is tundra.
+				</p>
+
+			<div class="asidePhoto"><img src="images/asideImage.jpg" alt="Photo of a forest" class="asideImage"></div>
+			
+			</div>
+		</div>
+		<!--Second content	-->
+		<div class="row"><!-- below need to equal to 12 -->
+			<div class="col">
+				<a href="#">
+				<div class="card d-block mx-auto">
+					<img src="images/rose.jpg" class="card-img-top imgcard" alt="rose">
+					<div class="card-body">	
+					<h5 class="card-title">card title</h5>
+					<p>122131414134133</p>
+					<a href="#" class="btn btn-primary">gogo </a>
+					</div>
+				</div>
+				</a></div>
+		</div>
+			<div class="col">
+				<div class="card d-block mx-auto">
+					<img src="images/rose.jpg" class="card-img-top imgcard" alt="rose">
+					<div class="card-body">	
+					<h5 class="card-title">card title</h5>
+					<p>122131414134133</p>
+					<a href="#" class="btn btn-primary">gogo </a>
+					</div>
+
+			</div>
+			<div class="col">
+				<div class="card d-block mx-auto">
+					<img src="images/rose.jpg" class="card-img-top imgcard" alt="rose">
+					<div class="card-body">	
+					<h5 class="card-title">card title</h5>
+					<p>122131414134133</p>
+					<a href="#" class="btn btn-primary">gogo </a>
+					</div>
+			</div>
+
+		</div>
+		<!-- Footor	-->
+		<div class="row"><!-- below need to equal to 12 -->
+			<div class="col themed-grid-col">Footor</div>
+		</div>
+	<!--
+<div class="container-fluid">
+		 Global naviation 
+		<div class="row"><!-- below need to equal to 12 
+		<div class="col-6 themed-grid-col">LOGO</div>
+		<div class="col-2 themed-grid-col">HOME</div>
+		<div class="col-2 themed-grid-col">DISCOVERY</div>
+		<div class="col-1 themed-grid-col">PHOTOS</div>
+		<div class="col-1 themed-grid-col">CONTACT</div>	
+		</div>-->	
+		
+	</div>
+	</div>
+
+</body>
+
+	</html>

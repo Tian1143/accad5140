@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<!--This is a comment!-->
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="HTML, CSS, JAVA">
+<meta name="author" content="Tian">
+<meta name="robots" content="noidex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scal=1.0">
+<title>5140 first webpage</title>
+<!--Referece here-->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/bootstrap-grid.css">
+<link rel="stylesheet" href="../css/grid.css">	
+<script src="../js/bootstrap.bundle.min.js"></script>
+
+<style>
+/*change in whole page*/
+	*{
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"
+	}
+/*This only change part*/
+	h1 {color:aquamarine;font-weight: 800}	
+	h2 {color:burlywood;font-weight: 800}	
+	.column{float:left;
+/*	width is the width of each column	*/
+			width:50%;
+/*	padding: inside of the object margin:outide of the object	*/
+			padding:50px;
+			background-color:gray;
+			font-weight: 600;
+			border:5px dotted #E1A5A6  ;
+	}
+/*can change one specific code in a div, need to have something called My class in div*/
+	.Myclass{
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		color:aqua
+	}
+	.smImage{
+		width: 300px;
+		height: 300px
+	}
+	
+</style>
+</head>
+	
+<!-- Body Part	-->
+<body>
+	<h1>Heading 1</h1>
+	<h2>Heading 1</h2>
+	<h3>Heading 1</h3>
+	<h4>Heading 1</h4>
+	<p>Hello everyone!<br>My name is <b>Tracy</b>!</p>
+	
+	<img class="smImage" src="../images/image4.jpg" alt="This ia a picture I like!" >
+	
+	
+	<div style="background-color: darkgrey">
+	I like reading and playing video games!
+	</div>
+	<div>
+	<div class="column">Game 1</div>
+	<div class="column">Game 2</div>	
+	<div class="column">Game 3</div>
+	<div class="column">Game 4</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<button type="button" class="btn btn-primary spacer">Know more about me!</button>
+<!--Image and link	-->
+	<br>
+	<a href="https://www.google.co.uk/" target="_blank">Google me!</a>
+<!--Lists-->
+	<br>
+	<br>
+	<br>
+	<ul>
+	<li class="Myclass">my hobby1</li>
+	<li class="Myclass">my hooby2</li>
+	<li>my hooby3</li>
+	<li>my hooby4</li>
+	</ul>
+	<ol>
+	<li>my hobby1</li>
+	<li>my hooby2</li>
+	<li>my hooby3</li>
+	<li>my hooby4</li>	
+	</ol>
+<!--buttons-->
+	<button type="button">contact me!</button>
+<!--bootstrap -->
+	<button type="button" class="btn btn-primary px-5">contact me!</button>
+	<div class="alert alert-primary"> balabala alert</div>
+	<h1>Example <span class="badge bg-secondary"> bala</span></h1>
+	<!--bootstrap modifiers
+	p=padding
+	m=marin
+	d=display
+	
+	t=margin or padding top
+	b=margin or padding bottom
+	l=margin or padding left
+	t=margin or padding right
+	-->
+</body>
+</html>
