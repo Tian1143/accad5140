@@ -17,95 +17,52 @@
 
 	<style>
 		/*CSS*/
+		#hiddenImage{
+			width: 200px;
+			display:none;
+		}
 	</style>
 	
 	<script>/*JAVA*/
-		// 0-basd language
-		//case senstitive
-		//code written in block
-		//inside{}
-		//all lines are terminated with a;
-		//variale and function names are arbitrary
-		
-		//Numrber: any integer
-//		let myNumber = 8;
-		//string: An alphanumeric set of characters
-//		let string = "This is my string";
-		//Boolean: True/False or 1/0
-//		let myBoolean = false;
-		//null: unknown value
-		//Undefined: Unassigned Value
-		
-//		let myValue;
-		
-		//Array:larger container for information
-		//Function: Slf contained set of code
-//		let myVar1 = "Hello";
-//		let myVar2 = "world!";
-//		const myAlert = myVar1+myVar2
-//		
-//		
-//		alert(myAlert);
-//		
-		//OPERATORS
-		
-//		let result= 5>4;
-//		alert(result);
-		
-//		let numl = 5;
-//		let num2 = 4;
-//		let numEval = num1 > num2
-//		alert(numEval);
-		
-		//equality
-//		a = b;//equal
-//		a == b;//equal?
-//		a != b;//not equal
-		
-		//conditionals
-		
-//		let myVar = 12;
-		
-//		if (myVar == 4) {
-//			// code to execute if th above is true		
-//		} else if (myVar == 6){
-//			//do something else
-//		} else if (myVar == 8){
-//			//do something else
-//		} else if (myVar == 10){
-//			//do something else
-//		} else {
-//			//do this
-//			alert("this condition failed")
-//		}
-		
-		//LOOPs
-		
-//		for (let i = 0; i<5; i++) {
-//			//this is my code that executes
-//			console.log("the value of i= "+i);
-//		}
-		
-		//Array
-		
-//		let colors = ["red", "Green", "Blue"];
-//		alert (colors[2]);
-		
-		//Functions
-		
-//		function addingNum () {
-//			let answer = (10 + 10)
-//			alert(answer);
-//		}
-		
-		function addingNum(x, y) {
-			let answer = (x + y);
-			alert(answer);
+		function findDate() {
+			//code
+			document.getElementById("clock").innerHTML = Date();
+//			console.log(the button work);
+		}
+		function findDiv() {
+			document.getElementById("myDiv").style.backgroundColor = "red";
+		}
+		function addNewHeading() {
+			const newHeading = document.createElement("h1");
+			newHeading.textContent = "New Heading";
 			
+			const existingHeading = document.getElementById("heading");
+			
+			if (existingHeading) {
+				existingHeading.parentNode.replaceChild(newHeading, existingHeading);
+			}
+		}
+		function randomColor() {
+			let myRandomColor = Math.floor(Math.random()*16777215).toString(16);
+			console.log(myRandomColor);
+			
+			document.body.style.backgroundColor = "#" + myRandomColor;
+			color.innerHTML = "#" + myRandomColor;
 		}
 		
-		//FUnction need to have that
-		addingNum(10, 15);
+		let isImageVisible = false;
+		
+		function toggleImage(){
+			const myHiddenImage = document.getElementById("hiddenImage");
+			if (isImageVisible) {
+				myHiddenImage.style.display = "none";
+			} else {
+				myHiddenImage.style.display = "block";
+			}
+			
+			isImageVisible = !isImageVisible;
+		}
+
 		
 		
 	</script>
@@ -113,25 +70,23 @@
 </head>
 
 <body>
-	<script>/*JAVA*/
-//		let myVar1 = "Hello";
-//		let myVar2 = "world!";
-//		const myAlert = myVar1+myVar2
-//		
-//		
-//		alert(myAlert);
-		
-		
-	</script>
 	
+<!--Time-->
+	<button type="button" onClick="findDate()">Display day and time</button>
+	<p id="clock"></p>
+<!--baclgorund color-->
+	<button type="button" onClick="findDiv()" >Find my div</button>
+	<div id="myDiv">&nbsp;</div>
+<!--replace p tag-->
+	<button type="button" onClick="addNewHeading()">find</button>
+	<p id="heading">old Heading</p>
+<!--random baclgorund color-->
+	<button type="button" onClick="randomColor()" >new color</button>
+	<span id="color"></span>
 	
-	
-	
-	
-	
-	
-	
-	
+<!--Reveal Hidden Object-->
+	<button type="button" onClick="toggleImage()">Toggle Image</button>
+	<img id="hiddenImage" src="images/BG1.jpg" alt="pink">
 	
 	
 </body>
